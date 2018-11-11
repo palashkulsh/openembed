@@ -20,6 +20,6 @@ http.createServer(app)
     process.exit(1);
   })
   .listen(app.get('port'), function () {
-    util.log("Payout v2 is listening on port: " + app.get('port') + ' in ' + app.get('env'));
+    util.log("openembed is listening on port: " + app.get('port') + ' in ' + app.get('env'));
   });
 
