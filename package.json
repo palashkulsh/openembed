@@ -1,0 +1,28 @@
+{
+  "name": "openembed",
+  "version": "1.0.0",
+  "description": "open source embed generation tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/palashkulsh/openembed.git"
+  },
+  "keywords": [
+    "embed",
+    "opensource",
+    "url"
+  ],
+  "author": "palash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palashkulsh/openembed/issues"
+  },
+  "homepage": "https://github.com/palashkulsh/openembed#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "url-metadata": "^2.1.7"
+  }
+}
