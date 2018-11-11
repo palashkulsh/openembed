@@ -4,6 +4,15 @@ module.exports = {
   getmeta :function(req, res, next){
     urlMetadata(req.query.url).then(
       function (metadata) { // success handler
+        var imgurl = metadata.image;
+        metadata.image = {
+          url: imgurl
+        };
+        var videourl = metadata.video;
+        metadata.video = {
+          url: videourl
+        };
+
         req.data = {
           data:metadata
         };
