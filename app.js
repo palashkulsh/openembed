@@ -14,6 +14,8 @@ https.globalAgent.maxSockets = socketsCount;
 app.set('port', process.env.PORT || 2005);
 require('./routes/')(app);
 
+app.use(require('./routes/lib/corsheaders'));
+
 http.createServer(app)
   .on('error', function (err) {
     util.log(err);
