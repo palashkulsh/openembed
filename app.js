@@ -12,9 +12,11 @@ var socketsCount = 1500;
 http.globalAgent.maxSockets = socketsCount;
 https.globalAgent.maxSockets = socketsCount;
 app.set('port', process.env.PORT || 2005);
+app.use(require('./routes/lib/corsheaders'));
+app.use('/public',express.static(__dirname +'/public'));
+
 require('./routes/')(app);
 
-app.use(require('./routes/lib/corsheaders'));
 
 http.createServer(app)
   .on('error', function (err) {
