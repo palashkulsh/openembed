@@ -1,4 +1,4 @@
-const urlMetadata = require('url-metadata');
+const urlMetadata = require('url-metatags');
 
 module.exports = {
   getmeta :function(req, res, next){
